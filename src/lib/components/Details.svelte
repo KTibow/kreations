@@ -39,7 +39,6 @@
       {
         duration,
         easing,
-        fill: "forwards",
       },
     );
     abort = () => {
