@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  margin: 0;
+  padding: 1rem;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+    background-color: black;
+    color: rgb(200 200 200);
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+pre,
+fieldset {
+  margin: 0.5em 0 0 0;
+}
+button {
+  cursor: pointer;
+}
+select {
+  cursor: pointer;
+}
+summary {
+  cursor: pointer;
+}
