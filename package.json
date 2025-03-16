@@ -1,6 +1,6 @@
 {
   "name": "kreations",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run prepack",
@@ -17,6 +17,7 @@
     "!dist/**/*.test.*",
     "!dist/**/*.spec.*"
   ],
+  "license": "MIT",
   "sideEffects": false,
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -50,5 +51,9 @@
   },
   "dependencies": {
     "@iconify/types": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KTibow/kreations"
   }
 }
