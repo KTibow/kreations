@@ -1,3 +1,4 @@
+export { default as Details } from "./components/Details.svelte";
 export { default as chat } from "./loaders/chat.js";
 export { default as circleBounce } from "./loaders/circleBounce.js";
 export { default as fragment } from "./loaders/fragment.js";
