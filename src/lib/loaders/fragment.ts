@@ -1,15 +1,21 @@
 export default {
-  body: [
-    "M 0 0 H 4 L 12 12 L 0 6 Z:-12 -12",
-    "M 4 0 H 16 L 12 12 Z:0 -12",
-    "M 16 0 H 24 V 20 L 12 12 Z:12 -12",
-    "M 24 20 V 24 H 8 L 12 12 Z:12 12",
-    "M 8 24 H 0 V 9 L 12 12 Z:-12 12",
-    "M 0 9 V 6 L 12 12 Z:-12 -4",
-  ]
-    .map((spec, i) => {
-      const [d, trans] = spec.split(":");
-      return `<path d="${d}" fill="currentColor" transform="translate(${trans})">
+  body: `<defs>
+	<mask id="roundMask">
+		<rect width="24" height="24" fill="white" rx="6" ry="6"/>
+	</mask>
+</defs>
+<g mask="url(#roundMask)">
+${[
+  "M 0 0 H 4 L 12 12 L 0 6 Z:-12 -12",
+  "M 4 0 H 16 L 12 12 Z:0 -12",
+  "M 16 0 H 24 V 20 L 12 12 Z:12 -12",
+  "M 24 20 V 24 H 8 L 12 12 Z:12 12",
+  "M 8 24 H 0 V 9 L 12 12 Z:-12 12",
+  "M 0 9 V 6 L 12 12 Z:-12 -4",
+]
+  .map((spec, i) => {
+    const [d, trans] = spec.split(":");
+    return `<path d="${d}" fill="currentColor" transform="translate(${trans})">
   <animateTransform
     attributeName="transform"
     type="translate"
@@ -22,8 +28,9 @@ export default {
     keySplines="0.05 0.7 0.1 1"
   />
 </path>`;
-    })
-    .join("\n"),
+  })
+  .join("\n")}
+</g>`,
   width: 24,
   height: 24,
 };
