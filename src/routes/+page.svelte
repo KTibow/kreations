@@ -2,6 +2,7 @@
   import Details from "$lib/components/Details.svelte";
   import chat from "$lib/loaders/chat";
   import circleBounce from "$lib/loaders/circleBounce";
+  import feed from "$lib/loaders/feed";
   import fragment from "$lib/loaders/fragment";
   import mice from "$lib/loaders/mice";
   import pulse from "$lib/loaders/pulse";
@@ -21,7 +22,7 @@
   You've read it now
 </Details>
 <div class="loaders">
-  {#each [chat, circleBounce, fragment, mice, pulse, star, triangleSquare] as loader}
+  {#each [chat, circleBounce, feed, fragment, mice, pulse, star, triangleSquare] as loader}
     <Icon icon={loader} width="4rem" height="4rem" />
   {/each}
 </div>
