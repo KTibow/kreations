@@ -4,6 +4,7 @@
   import circleBounce from "$lib/loaders/circleBounce";
   import feed from "$lib/loaders/feed";
   import fragment from "$lib/loaders/fragment";
+  import m3Indicator from "$lib/loaders/m3-indicator";
   import mice from "$lib/loaders/mice";
   import pulse from "$lib/loaders/pulse";
   import star from "$lib/loaders/star";
@@ -22,7 +23,7 @@
   You've read it now
 </Details>
 <div class="loaders">
-  {#each [chat, circleBounce, feed, fragment, mice, pulse, star, triangleSquare] as loader}
+  {#each [chat, circleBounce, feed, fragment, m3Indicator, mice, pulse, star, triangleSquare] as loader}
     <Icon icon={loader} width="4rem" height="4rem" />
   {/each}
 </div>
