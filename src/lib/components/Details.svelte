@@ -21,6 +21,9 @@
     return `${summaryElement.scrollHeight}px`;
   };
   const getFullHeight = () => {
+    if ("interpolateSize" in details.style) {
+      return "auto";
+    }
     return `${details.scrollHeight}px`;
   };
 
@@ -94,6 +97,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    interpolate-size: allow-keywords;
   }
   summary {
     display: flex;
