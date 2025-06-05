@@ -33,6 +33,7 @@
   };
 
   const animateOpen = () => {
+    details.classList.toggle("open", true);
     details.open = true;
     const animation = details.animate(
       [{ height: getCollapsedHeight() }, { height: getFullHeight() }],
@@ -46,6 +47,7 @@
     };
   };
   const animateClose = () => {
+    details.classList.toggle("open", false);
     const animation = details.animate(
       [{ height: getFullHeight() }, { height: getCollapsedHeight() }],
       {
