@@ -5,6 +5,7 @@ export { default as feed } from "./loaders/feed.js";
 export { default as fragment } from "./loaders/fragment.js";
 export { default as m3Indicator } from "./loaders/m3-indicator.js";
 export { default as mice } from "./loaders/mice.js";
+export { default as onward } from "./loaders/onward.js";
 export { default as pulse } from "./loaders/pulse.js";
 export { default as star } from "./loaders/star.js";
 export { default as triangleSquare } from "./loaders/triangleSquare.js";
