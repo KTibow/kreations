@@ -9,6 +9,7 @@
   import pulse from "$lib/loaders/pulse";
   import star from "$lib/loaders/star";
   import triangleSquare from "$lib/loaders/triangleSquare";
+  import onward from "$lib/loaders/onward";
   import Icon from "./Icon.svelte";
 </script>
 
@@ -23,7 +24,7 @@
   You've read it now
 </Details>
 <div class="loaders">
-  {#each [chat, circleBounce, feed, fragment, m3Indicator, mice, pulse, star, triangleSquare] as loader}
+  {#each [chat, circleBounce, feed, fragment, m3Indicator, mice, pulse, star, triangleSquare, onward] as loader}
     <Icon icon={loader} width="4rem" height="4rem" />
   {/each}
 </div>
